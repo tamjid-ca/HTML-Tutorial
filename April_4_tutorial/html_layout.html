@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        header,
+        nav,
+        section,
+        article,
+        aside,
+        footer {
+            padding: 16px;
+            border-radius: 8px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        header {
+            margin: 16px;
+            background: #eaf4ff;
+        }
+
+        nav {
+            margin: 0 16px 16px;
+            background: #eef8ef;
+        }
+
+        nav a {
+            margin-right: 12px;
+            text-decoration: none;
+            color: #0b57d0;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 16px;
+            margin: 0 16px 16px;
+        }
+
+        section {
+            background: #fff;
+        }
+
+        article {
+            margin-top: 12px;
+            background: #fffdf2;
+        }
+
+        aside {
+            background: #fff7f0;
+        }
+
+        footer {
+            margin: 0 16px 16px;
+            text-align: center;
+            background: #f0f0f0;
+        }
+
+        details {
+            margin-top: 12px;
+            padding: 10px;
+            background: #f7f9ff;
+            border: 1px solid #ccd7ff;
+            border-radius: 6px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <p>A simple semantic HTML5 layout example.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main class="layout">
+        <section>
+            <h2>Main Section</h2>
+            <p>This section contains the main content of the page.</p>
+
+            <article>
+                <h3>Article Title</h3>
+                <p>This article is independent, self-contained content.</p>
+
+                <details>
+                    <summary>Read more details</summary>
+                    <p>
+                        This extra content is hidden by default and can be expanded by the user.
+                    </p>
+                </details>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This is aside content, such as tips, ads, or related links.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
